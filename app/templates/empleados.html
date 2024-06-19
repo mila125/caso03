@@ -1,0 +1,18 @@
+<!-- templates/empleados.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empleados</title>
+</head>
+<body>
+    <h1>Lista de Empleados</h1>
+    <ul>
+        {% for empleado in empleados %}
+            <li>{{ empleado.id_empleado }} - {{ empleado.rut_empleado }} - {{ empleado.id_encargado }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

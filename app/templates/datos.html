@@ -1,0 +1,18 @@
+<!-- templates/datos.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de Datos</title>
+</head>
+<body>
+    <h1>Datos:</h1>
+    <ul>
+        {% for dato in datos %}
+            <li>{{ dato }}</li>   <!-- Mostrar los datos como prefieras -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
